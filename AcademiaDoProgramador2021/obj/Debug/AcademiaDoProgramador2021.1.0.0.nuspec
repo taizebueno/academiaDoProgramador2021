@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AcademiaDoProgramador2021</id>
+    <version>1.0.0</version>
+    <authors>AcademiaDoProgramador2021</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="linq2db.MySql" version="3.2.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Dell\Documents\Visual Studio 2019\C#\AcademiaDoProgramador2021\bin\Debug\net5.0-windows\AcademiaDoProgramador2021.runtimeconfig.json" target="lib\net5.0-windows7.0\AcademiaDoProgramador2021.runtimeconfig.json" />
+    <file src="C:\Users\Dell\Documents\Visual Studio 2019\C#\AcademiaDoProgramador2021\bin\Debug\net5.0-windows\AcademiaDoProgramador2021.dll" target="lib\net5.0-windows7.0\AcademiaDoProgramador2021.dll" />
+  </files>
+</package>

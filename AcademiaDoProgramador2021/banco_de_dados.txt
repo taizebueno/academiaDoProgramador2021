@@ -1,0 +1,85 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 5.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 19/03/2021 às 01:59
+-- Versão do servidor: 10.4.11-MariaDB
+-- Versão do PHP: 7.4.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Banco de dados: `academia_programador2021_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `chamados`
+--
+
+CREATE TABLE `chamados` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(150) NOT NULL,
+  `descricao` text NOT NULL,
+  `equipamento` varchar(150) NOT NULL,
+  `data_abertura` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `equipamentos`
+--
+
+CREATE TABLE `equipamentos` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `numero_serie` int(11) NOT NULL,
+  `preco` decimal(5,2) NOT NULL,
+  `data_fabricacao` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Despejando dados para a tabela `equipamentos`
+--
+
+INSERT INTO `equipamentos` (`id`, `nome`, `numero_serie`, `preco`, `data_fabricacao`) VALUES
+(1, 'Taize', 123, '999.99', '11/11/11');
+
+--
+-- Índices de tabelas apagadas
+--
+
+--
+-- Índices de tabela `chamados`
+--
+ALTER TABLE `chamados`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices de tabela `equipamentos`
+--
+ALTER TABLE `equipamentos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas apagadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `chamados`
+--
+ALTER TABLE `chamados`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `equipamentos`
+--
+ALTER TABLE `equipamentos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
